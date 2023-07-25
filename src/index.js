@@ -1,0 +1,24 @@
+require("bootstrap-icons/font/bootstrap-icons.css");
+
+import "normalize.css";
+import "./styles/main.scss";
+import "./styles/adaptive.scss";
+import "./styles/variables.scss";
+import "./styles/header-footer.scss";
+import "./styles/authorization-style.scss";
+import "./pages/AboutUs/style.scss";
+import "./pages/Contact-form/style.scss";
+import "./pages/Contact-us/style.scss";
+import "./pages/Documents/style.scss";
+import "./pages/History/style.scss";
+import "./pages/Main/style.scss";
+import "./pages/MyRepayments/style.scss";
+import "./pages/News/style.scss";
+import "./pages/News-more/style.scss";
+import "./pages/Payments/style.scss";
+import "./pages/PersonalData/style.scss";
+import "./pages/PersonalDataMobile/style.scss";
+import "./pages/Questions/style.scss";
+import "./pages/Repayment/style.scss";
+import "./pages/ResetPassword/style.scss";
+import "./pages/Operator/style.scss";

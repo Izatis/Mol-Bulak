@@ -1,0 +1,307 @@
+@import "../../styles/variables.scss";
+@import "../../styles/adaptive.scss";
+
+.aboutUs {
+  background: #fefbf2;
+  padding: 30px 0 0 0;
+  @include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+  .navigation-titles {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 0 !important;
+    float: left;
+    a {
+      color: #00b346;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      text-decoration: none !important;
+      @include adaptive-value("font-size", 16, 15, 0);
+    }
+
+    li {
+      color: #a8a9ad;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      @include adaptive-value("font-size", 20, 15, 0);
+    }
+  }
+
+  .personal-section-main-block {
+    margin: 0 0 100px 0;
+    max-width: 730px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, #00b346 0%, #00d955 100%);
+    border-radius: 5px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @include adaptive-value("font-size", 24, 15, 1);
+    }
+  }
+
+  .aboutUs_content {
+    .aboutUs_content_akchalay-left {
+      h2 {
+        color: #383c45;
+        font-family: "Montserrat", sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 135%;
+        @include adaptive-value("font-size", 32, 18, 1);
+      }
+      p {
+        color: #707675;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 175%;
+        @include adaptive-value("font-size", 16, 14, 1);
+      }
+    }
+    .aboutUs_content_akchalay-right {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .aboutUs_content_offer {
+    padding: 150px 0;
+    .aboutUs_content_offer_title {
+      h2 {
+        color: #383c45;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 135%;
+        @include adaptive-value("font-size", 32, 18, 1);
+      }
+    }
+    .aboutUs_content_offer_desc {
+      p {
+        color: #707675;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 175%;
+      }
+    }
+    .aboutUs_content_offer_card {
+      border-radius: 13.37px;
+      padding: 20px;
+      background: #f3f4f5;
+      h5 {
+        color: #383c45;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 135%;
+        @include adaptive-value("font-size", 16, 10, 1);
+      }
+      p {
+        color: #707675;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 135%;
+        @include adaptive-value("font-size", 14, 10, 1);
+      }
+    }
+  }
+
+  .ourCulture {
+    border-radius: 50px;
+    padding: 50px 0 50px 50px;
+    background: #00b346;
+    .ourCulture_title {
+      h2 {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 135%;
+        padding: 0 0 40px 0;
+        @include adaptive-value("font-size", 32, 18, 1);
+      }
+    }
+    .ourCulture_content-left {
+      &_boxes {
+        padding: 0 10px 0 0;
+        &_box {
+          div {
+            @include adaptive-value("width", 60, 40, 0);
+            @include adaptive-value("height", 60, 40, 0);
+            
+            border-radius: 15px;
+            border: 1px solid #fff;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.95) 0%,
+              rgba(255, 255, 255, 0.75) 100%
+            );
+          }
+          h5 {
+            padding: 12px 0;
+            color: #fff;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 135%;
+            @include adaptive-value("font-size", 16, 13, 1);
+          }
+          h6 {
+            color: #bcffd6;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            @include adaptive-value("font-size", 16, 11, 1);
+          }
+        }
+      }
+      &_btn {
+        button {
+          padding: 15px 20px 15px 19px;
+          border-radius: 8px;
+          background: #ffdf6e;
+          font-weight: bolder;
+          margin: 50px 0 0 0;
+        }
+      }
+    }
+    .ourCulture_content-right {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .aboutUs_operators {
+    padding: 160px 0 0 0;
+    .aboutUs_operators-left {
+      .aboutUs_operators-left_title {
+        h2 {
+          max-width: 350px;
+          color: #383c45;
+          font-family: "Montserrat", sans-serif;
+          @include adaptive-value("font-size", 32, 16, 1);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 135%;
+          padding: 0 0 24px;
+        }
+      }
+      .aboutUs_operators-left_desc {
+        p {
+          max-width: 350px;
+          color: #383c45;
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          padding: 12px 0 0 0;
+          @include adaptive-value("font-size", 16, 14, 1);
+        }
+      }
+    }
+  }
+
+  .contactUs {
+    padding: 120px 0 100px 0;
+    .contactUs_content {
+      max-width: 540px;
+      width: 100%;
+      padding: 20px 0;
+      border-radius: 25px;
+      background: #f3f4f5;
+      h2 {
+        margin-bottom: 35px;
+        @include adaptive-value("font-size", 24, 15, 1);
+      }
+      .contactUs_content_btn {
+        form {
+          width: 100%;
+          button {
+            padding: 4% 20%;
+            color: #fff;
+            text-align: center;
+            @include adaptive-value("font-size", 18, 15, 1);
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-radius: 8px;
+            background: #2ab34b;
+            border: none;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .personal-section-main-block {
+    margin: 0 0 50px 0 !important;
+    height: 50px !important;
+  }
+  .aboutUs_content {
+    .aboutUs_content_akchalay-left {
+      h2 {
+        color: #00b346 !important;
+      }
+    }
+  }
+  .aboutUs_content_offer {
+    padding: 50px 0 !important;
+  }
+  .aboutUs_operators-left_title {
+    h2 {
+      max-width: 100% !important;
+    }
+  }
+  .ourCulture {
+    padding: 20px !important;
+  }
+  .aboutUs_operators {
+    padding: 40px 0 0 0 !important;
+  }
+  .aboutUs_operators-left_desc {
+    p {
+      max-width: 100% !important;
+    }
+  }
+  .contactUs {
+    padding: 40px 0 70px 0 !important;
+    h2 {
+      margin-bottom: 20px !important;
+    }
+  }
+}

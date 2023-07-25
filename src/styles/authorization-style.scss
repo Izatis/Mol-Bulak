@@ -1,0 +1,118 @@
+@import "./variables.scss";
+@import "./adaptive.scss";
+
+.form-main-block {
+  height: 110vh;
+  background: $color_3;
+  @include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+
+  .form-block {
+    max-width: 730px;
+    background: $color_1;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      @include adaptive-value("font-size", 24, 17, 0);
+      color: $color_4;
+    }
+
+    .form-block__back-arrow {
+      width: 36px;
+    }
+
+    form {
+      border: 1px solid #e8eaec;
+      padding: 34px 30px;
+
+      label {
+        color: #a8a9ad;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      input {
+        height: 39px;
+        background: $color_1;
+        border: 1.5px solid #e8eaec;
+
+        &::placeholder {
+          color: #8c9291;
+          @include adaptive-value("font-size", 14, 12, 0);
+          font-weight: 500;
+        }
+      }
+
+      .input-block_first {
+        .bi-eye {
+          font-size: 21px;
+          top: 20%;
+          right: 3%;
+          cursor: pointer;
+          color: #00b346;
+        }
+      }
+
+      .input-block_second {
+        input {
+          max-width: 255px;
+        }
+      }
+
+      .message-btn {
+        min-width: 135px;
+        width: 160px;
+        height: 39px;
+        background: #c1c1c1;
+        font-size: 12px;
+        color: $color_1;
+        transition: all 0.3s;
+
+        &:hover {
+          background: $color_2;
+          transition: all 0.3s;
+        }
+      }
+
+      .form-submit-container {
+        max-width: 255px;
+        height: 52px;
+
+        .form-submit-button {
+          width: 100%;
+          height: 100%;
+          background: $color_2;
+          color: $color_1;
+        }
+      }
+    }
+
+    p {
+      color: #a8a9ad;
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-main-block {
+    .form-block {
+      background: transparent;
+      box-shadow: none;
+
+      form {
+        border: none;
+        padding: 0;
+
+        .form-submit-container {
+          max-width: 425px;
+          height: 46px;
+          position: fixed;
+          right: 16px;
+          bottom: 40px;
+          left: 16px;
+        }
+      }
+    }
+  }
+}

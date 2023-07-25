@@ -1,0 +1,97 @@
+@import "../../styles/variables.scss";
+@import "../../styles/adaptive.scss";
+
+.contact-us {
+  background-color: #fefbf2;
+  @include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+
+  .container {
+    @include centering();
+
+    .contact-us__links {
+      .contact-us__link_active {
+        color: $color_2;
+      }
+
+      .contact-us__link {
+        color: #a8a9ad;
+      }
+    }
+
+    .contact-us__block {
+      max-width: 730px;
+      height: 100px;
+      background: linear-gradient(180deg, #00b346 0%, #00d955 100%);
+      border-radius: 5px 50px;
+      margin: 0 0 100px;
+
+      h1 {
+        @include adaptive-value("font-size", 32, 20, 0);
+      }
+    }
+
+    .contact-us__content {
+      h2 {
+        @include adaptive-value("font-size", 32, 18, 0);
+      }
+
+      .contact-us__width {
+        white-space: nowrap;
+      }
+
+      span:nth-child(1) {
+        @include adaptive-value("font-size", 20, 16, 0);
+      }
+
+      span:nth-child(2) {
+        @include adaptive-value("font-size", 20, 14, 0);
+      }
+
+      .contact-us__map-block {
+        .contact-us__map {
+          max-width: 643px;
+          @include adaptive-value("height", 398, 224, 1);
+          border: 3px solid #00b346;
+        }
+
+        span {
+          white-space: nowrap;
+          @include adaptive-value("font-size", 16, 14, 0);
+        }
+      }
+    }
+
+    .color_1 {
+      color: $color_1;
+    }
+
+    .color_2 {
+      color: #383c45;
+    }
+
+    .color_3 {
+      color: #00b346;
+    }
+
+    .color_4 {
+      color: #a8a9ad;
+    }
+
+    .margin_1 {
+      margin: 0 0 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us {
+    .container {
+      .contact-us__block {
+        height: 50px;
+        border-radius: 0 24.726px 2.473px;
+        margin: 0 0 40px;
+      }
+    }
+  }
+}

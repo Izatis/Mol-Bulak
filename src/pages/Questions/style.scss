@@ -1,0 +1,142 @@
+@import "../../styles/variables.scss";
+@import "../../styles/adaptive.scss";
+
+.personal-section {
+  @include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+}
+
+.secret___block {
+  height: 50px;
+  border-radius: 0 24.726px 2.473px;
+  background: linear-gradient(180deg, #00b346 0%, #00d955 100%);
+
+  h1 {
+    color: #fff;
+    @include adaptive-value("font-size", 32, 20, 0);
+  }
+}
+
+.secret {
+  display: flex;
+  flex-direction: column ;
+  row-gap: 24px;
+
+  &__back{
+    max-width: 350px;
+    width: 100%;
+    padding-inline: 10px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    &-label {
+      color: #adb3b3;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    &-input {
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: none;
+      outline: none;
+      border-radius: 5px;
+      border: 1.5px solid #e8eaec;
+      padding: 11px 15px 11px 12px;
+
+      &::placeholder {
+        color: #8c9291;
+      }
+    }
+    &-input option{
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  &__btn {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 44px;
+    border-radius: 8px;
+    background: #2ab34b;
+    border: none;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .secret__sidebar {
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-section-main-block {
+    margin-bottom: 0 !important;
+  }
+  .personal-section p {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .secret__main{
+    margin-top: 0 !important;
+  }
+  .secret__sidebar{
+    display: none !important;
+  }
+  .secret__form{
+    padding-top: 0;
+  }
+  .secret__ul{
+    display: none !important;
+  }
+  .secret__back{
+    max-width: 350px;
+    width: 100%;
+    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    &::before{
+      content: url("../../assets/back-arrow.svg");
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+    }
+  }
+  .secret__back{
+    margin: 0 !important;
+  }
+
+  // ????
+  .secret__adap{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px !important;
+  }
+
+  .secret__content{
+    padding-top: 0;
+  }
+  .secret__title{
+    display: none;
+  }
+  .secret__btn{
+    padding: 13px 0;
+    font-size: 16px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}
+

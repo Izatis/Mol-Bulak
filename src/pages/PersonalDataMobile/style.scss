@@ -1,0 +1,176 @@
+@import "../../styles/variables.scss";
+@import "../../styles/adaptive.scss";
+
+
+.personal-mobile-section {
+  padding: 28px 1% 30px 1%;
+  @include centering;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  @include adaptive-value("margin-top", 20, 70, 0);
+  @include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+  .message-2{
+    width: 248px;
+    height: 53px;
+    background-image: url('../../assets/profile-icons/messages.svg');
+    background-position: 100% 100%;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: messageTop 1.7s;
+  }
+  h2 {
+    color: #383c45;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+    @include adaptive-value("font-size", 23, 18, 0);
+  }
+  h1 {
+    color: #383c45;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+    margin-bottom: 1px !important;
+    @include adaptive-value("font-size", 21, 20, 0);
+  }
+  a {
+    color: #00b346;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    @include adaptive-value("font-size", 13, 12, 0);
+  }
+  .profile-img {
+    width: 59px;
+    height: 59px;
+    border-radius: 18px;
+    border: 2px solid #00b346;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30.1px !important;
+  }
+  .change-img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    top: 36px;
+    left: 45px;
+  }
+  .form-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      color: #adb3b3;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      // margin-bottom: 5px !important;
+      @include adaptive-value("font-size", 14, 12, 0);
+    }
+    input {
+      border-radius: 5px;
+      border: 1.5px solid #e8eaec;
+      background: #fff;
+      transition: 0.4s;
+      height: 39px;
+      color: #383c45;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 5px;
+      padding-left: 10px;
+    }
+    input:focus {
+      border: 1.5px solid green;
+    }
+    select {
+      border-radius: 5px;
+      border: 1.5px solid #e8eaec;
+      background: #fff;
+      height: 39px;
+      padding: 0 0 0 12px;
+      color: #383c45;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      transition: 0.4s;
+      margin-top: 5px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: "";
+      background: url("../../assets/profile-icons/Vector\ \(2\).svg")
+        no-repeat;
+      background-position: right 12px top 50%;
+      option {
+        border-radius: 5px;
+        border: 1.5px solid #e8eaec;
+        background: #fff;
+        height: 39px;
+        padding: 5%;
+        font-size: 120%;
+      }
+    }
+    select:focus {
+      border: 1.5px solid green;
+    }
+    .number-select {
+      max-width: 82px;
+      width: 100%;
+    }
+
+    button {
+      border-radius: 10px;
+      background: #00b346;
+      border: none;
+      height: 46px;
+      margin-top: 61px;
+      color: #fff;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .personal-mobile-section {
+    padding: 28px 2.5% 30px 2.5%;
+  }
+}
+
+@keyframes messageTop {
+  0% {
+    top: -130px;
+  }
+  100% {
+    top: 20px;
+  }
+}

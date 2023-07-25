@@ -1,0 +1,193 @@
+@import "../../styles/variables.scss";
+@import "../../styles/adaptive.scss";
+
+.document {
+  height: 100vh;
+  background: #fefbf2;
+  @include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+
+  .container {
+    @include centering();
+
+    .sidebar-block {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 0;
+
+        li {
+          font-size: 16px;
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+          color: #a8a9ad;
+
+          a {
+            color: #00b346;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+            text-decoration: none !important;
+            @include adaptive-value("font-size", 16, 15, 0);
+          }
+        }
+      }
+
+      .personal-section-main-block {
+        max-width: 350px;
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(180deg, #00b346 0%, #00d955 100%);
+        border-radius: 5px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        
+        h2 {
+          color: $color_1;
+          text-align: center;
+          font-size: 24px;
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          @include adaptive-value("font-size", 24, 20, 0);
+        }
+      }
+
+      .sidebar {
+        float: left;
+        max-width: 255px;
+        width: 100%;
+        padding-left: 18px;
+        .sidebar-block {
+          gap: 9px;
+          height: 41px;
+          align-items: center;
+          cursor: pointer;
+          text-decoration: none;
+          p {
+            color: #707675;
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding-top: 12px;
+          }
+        }
+        .sidebar-block-active {
+          align-items: center;
+          gap: 9px;
+          border-radius: 8px;
+          height: 41px;
+          background: #eef0f3;
+          text-decoration: none;
+          cursor: pointer;
+          p {
+            color: #383c45;
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-top: 12px;
+          }
+        }
+        h5 {
+          color: #a8a9ad;
+          font-size: 12px;
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+
+    .document___block {
+      height: 50px;
+      border-radius: 0 24.726px 2.473px;
+      background: linear-gradient(180deg, #00b346 0%, #00d955 100%);
+
+      h1 {
+        @include adaptive-value("font-size", 32, 20, 0);
+      }
+    }
+
+    .document__title {
+      margin: 200px 0 0;
+
+      b {
+        color: #adb3b3;
+      }
+
+      .document__back-arrow {
+        width: 36px;
+      }
+
+      h2 {
+        color: #383c45;
+      }
+    }
+
+    .document__card {
+      max-width: 445px;
+      @include adaptive-value("margin-bottom", 26, 24, 0);
+
+      b {
+        color: #383c45;
+        @include adaptive-value("font-size", 15, 12, 0);
+      }
+    }
+
+    .document__download {
+      span {
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: 500;
+        color: #3445de;
+      }
+    }
+
+    .color_1 {
+      color: $color_1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .document {
+    .container {
+      .document__title {
+        margin: 30px 0 0;
+      }
+
+      .document__card {
+        max-width: 768px;
+      }
+
+      .document__download {
+        max-width: 425px;
+        height: 46px;
+        background-color: #00b346;
+        position: fixed;
+        right: 16px;
+        bottom: 40px;
+        left: 16px;
+
+        span {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 600;
+          color: $color_1;
+        }
+      }
+    }
+  }
+}

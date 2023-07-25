@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal data mobile</title>
+  </head>
+
+  <body>
+    <header
+      class="w-100 position-fixed top-0 z-3 d-flex align-items-center px-md-4 px-2"
+    >
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="header__logo col-md-3 col-sm-11 col-10">
+            <a href="/Main.html">
+              <img
+                class="img-fluid"
+                src="../../assets/header-footer/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="header__menu col-2 d-md-block d-none p-0">
+            <div class="header__menu-entrails d-flex align-items-center">
+              <button
+                class="w-100 position-relative d-flex align-items-center justify-content-between btn"
+              >
+                <img src="../../assets/header-footer/menu.svg" alt="menu" />
+                <h4 class="fs-5 fw-semibold">Меню</h4>
+                <nav class="position-absolute rounded-4 gap-4 pt-3">
+                  <img
+                    class="position-absolute"
+                    src="../../assets/header-footer/top-arrow.svg"
+                    alt="arrow image"
+                  />
+                  <ul>
+                    <li><a href="/Main.html">Главная</a></li>
+                    <li><a href="/News.html">Новости</a></li>
+                    <li><a href="#">Получить заём</a></li>
+                    <li><a href="/Repayment.html">Погасить заём</a></li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                      <a href="/PersonalData.html">Личный кабинет</a>
+                    </li>
+                    <li><a href="/Main.html">Моб. приложение</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li>
+                      <a href="/Contact-us.html">Связаться с нами</a>
+                    </li>
+                  </ul>
+
+                  <ul class="menu__latest-list">
+                    <li>
+                      <a href="/PersonalData.html">Личный кабинет</a>
+                    </li>
+                    <li><a href="/Main.html">Моб. приложение</a></li>
+                    <li><a href="#">Акции</a></li>
+                  </ul>
+                </nav>
+              </button>
+            </div>
+          </div>
+          <div
+            class="header__setting col-7 d-md-flex d-none justify-content-end p-0"
+          >
+            <a
+              class="header__personal-area fs-6 fw-semibold text-white me-4 btn"
+              href="/PersonalData.html"
+              >Личный кабинет</a
+            >
+            <a class="header__get-money fs-6 fw-semibold me-5 btn" href="#"
+              >Получить деньги</a
+            >
+            <button class="header__language-btn w-100 fs-6 fw-semibold p-0 btn">
+              <i class="bi bi-globe"></i> РУ
+            </button>
+          </div>
+
+          <!-- Burger menu -->
+          <nav class="col d-md-none d-block" role="navigation">
+            <div id="menu-toggle">
+              <input type="checkbox" id="test" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <div class="burgerAkchaIcon position-absolute">
+                  <a href="/Main.html">
+                    <img
+                      class="burgreImg"
+                      src="../../assets/news/BurgerIcon.svg"
+                      alt="burgerIcon"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/Recently.png"
+                              alt="mainImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Главная</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Main.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Главная страница</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="newsImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Новости</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/News.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Новости дня</li></a
+                        >
+                      </div>
+                      <div class="accordion-body">
+                        <a href="/News.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Новости недели</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="getMonImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Получить заём</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                                      <a href="/Payments.html" class="d-flex burgerUpSpace">
+
+
+                          <li class="p-2">Заём для вас</li></a
+                        >
+                      </div>
+                      <div class="accordion-body">
+                                      <a href="/Payments.html" class="d-flex burgerUpSpace">
+
+
+                          <li class="p-2">Изменить платёж</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="givMonImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Погасить заём</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Repayment.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Погашение заёмов</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/Recently.png"
+                              alt="perCobImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Личный кабинет</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="collapse"
+                      aria-labelledby="flush-headingFive"
+                    >
+                      <div class="accordion-body">
+                        <a
+                          href="/PersonalData.html"
+                          class="d-flex burgerUpSpace"
+                        >
+                          <li class="p-2">Ваш кабинет</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="mobileImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Мобильное приложение</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSix"
+                      class="collapse"
+                      aria-labelledby="flush-headingSix"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Main.html" class="d-flex burgerUpSpace">
+
+                          <li class="p-2">Моб-приложение</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="pt-3">
+                  <button
+                    class="header__language-btn border-0 fs-6 fw-semibold pe-0 ps-0 btn d-flex pt-3"
+                  >
+                    <img src="../../assets/news/Vector.svg" alt="VectorImg" />
+                    <p>РУ</p>
+                    <div class="burgerSocialIcons justify-content-between">
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/Twitter.svg"
+                        alt="twitterImg"
+                      />
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/Whatsapp.svg"
+                        alt="whatsappImg"
+                      />
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/instagram.svg"
+                        alt="InstagramImg"
+                      />
+                    </div>
+                  </button>
+                </div>
+                <div class="burgerNumbers mt-4">
+                  <div class="d-flex">
+                    +996 555 123 456
+                    <p class="clientBur">Клиентам</p>
+                  </div>
+                  <div class="d-flex pt-3">
+                    +996 555 123 456
+                    <p class="clientBur">Бизнесу и ИП</p>
+                  </div>
+                  <div class="burgerMail pt-3">
+                    <a href="#">support@akchalay.kg</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="personal-mobile-section">
+      <div class="message-2"></div>
+      <div class="row">
+        <a href="/PersonalData.html" class="col-1 me-3 mt-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z"
+              fill="#00B346"
+            />
+          </svg>
+        </a>
+        <div class="col-9 d-flex justify-content-center ms-3">
+          <h2>Редактировать профиль</h2>
+        </div>
+        <div class="row col-11 mt-4 ms-0 position-relative" style="z-index: -1">
+          <div class="d-flex col-6 p-1 profile-img">
+            <img src="../../assets/Accaount-Img.png" alt="Accaount-Img.img" />
+          </div>
+          <img
+            class="change-img"
+            src="../../assets/profile-icons/change-photo.svg"
+            alt="change-photo.img"
+          />
+          <div class="col-6 ms-1 mt-3">
+            <h1 class="col-8">Алексей Иванов</h1>
+            <a class="col-4" href="#">Изменить фото</a>
+          </div>
+        </div>
+        <form class="form-block mt-5" action="#">
+          <span class="col-xxl-6 col-md-6 col-sm-8 col-12"
+            >Фамилия Имя Отчество</span
+          >
+          <input class="col-xxl-6 col-md-6 col-sm-8 col-12" type="text" />
+          <div class="d-flex gap-2 mt-4 col-xxl-6 col-md-6 col-sm-8 col-12">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="12"
+              viewBox="0 0 10 12"
+              fill="none"
+            >
+              <path
+                d="M5.37778 3.00174C5.76667 2.86778 6.05556 2.49936 6.1 2.08629C6.12778 1.82393 6.07222 1.57832 5.94444 1.37737L5.23333 0.138156C5.12778 -0.0460519 4.86111 -0.0460519 4.75 0.138156L4.03889 1.37737C3.94444 1.54483 3.88889 1.7402 3.88889 1.95232C3.88889 2.68915 4.61111 3.2641 5.37778 3.00174ZM7.51667 8.60612L6.96111 8.04791L6.36111 8.64519C5.63889 9.37086 4.37222 9.37644 3.64444 8.64519L3.05 8.04791L2.44444 8.64519C2.08333 9.00803 1.6 9.20898 1.08889 9.20898C0.683333 9.20898 0.311111 9.08059 0 8.86847V10.8836C0 11.4976 0.5 12 1.11111 12H8.88889C9.5 12 10 11.4976 10 10.8836V8.86847C9.58333 9.15316 9.05 9.28713 8.47778 9.15874C8.11111 9.08059 7.78333 8.87406 7.51667 8.60612ZM8.33333 4.74334H5.55556V4.18514C5.55556 3.87813 5.30556 3.62693 5 3.62693C4.69444 3.62693 4.44444 3.87813 4.44444 4.18514V4.74334H1.66667C0.744444 4.74334 0 5.49134 0 6.41796V7.23293C0 7.70741 0.277778 8.16514 0.727778 8.31585C1.13333 8.44982 1.57222 8.34934 1.85556 8.05908L3.04444 6.8701L4.22778 8.05908C4.65 8.48331 5.34444 8.48331 5.76667 8.05908L6.95556 6.8701L8.13889 8.05908C8.37778 8.2991 8.71111 8.41075 9.05556 8.36609C9.60556 8.29352 9.99444 7.77439 9.99444 7.21619V6.42354C10 5.49134 9.25556 4.74334 8.33333 4.74334Z"
+                fill="#ADB3B3"
+              />
+            </svg>
+            <span>Дата рождения</span>
+          </div>
+          <input class="col-xxl-6 col-md-6 col-sm-8 col-12" type="text" />
+          <div
+            class="d-flex align-items-center gap-2 mt-4 col-xxl-6 col-md-6 col-sm-8 col-12"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="12"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <path
+                d="M9.7938 0.206058C9.79023 0.203055 9.78548 0.200652 9.7831 0.197649C9.62265 0.0378706 9.4004 -0.0251999 9.19479 0.00903836L6.81662 0.0402733C6.44046 0.0456793 6.13977 0.357428 6.14452 0.737652C6.14928 1.11668 6.43392 1.39959 6.83385 1.41641L7.63014 1.4062L6.46482 2.58411C5.77193 2.06754 4.9376 1.78823 4.0599 1.78823C2.9748 1.78823 1.95448 2.2153 1.18731 2.99077C-0.395769 4.59156 -0.395769 7.19667 1.18731 8.79746C1.95448 9.57292 2.9748 10 4.0599 10C5.1444 10 6.16532 9.57292 6.93249 8.79746C8.33492 7.37867 8.49715 5.17241 7.41443 3.57402L8.63798 2.34084V3.24125C8.63798 3.62147 8.94343 3.92902 9.31899 3.92902C9.69634 3.92902 10 3.62087 10 3.24125V0.694404C10 0.5118 9.92334 0.335203 9.7938 0.206058ZM5.96981 7.82437C4.95008 8.85512 3.1715 8.85512 2.15058 7.82437C1.09758 6.76058 1.09758 5.02824 2.15058 3.96386C2.66104 3.44848 3.33908 3.16436 4.0605 3.16436C4.78251 3.16436 5.45935 3.44848 5.971 3.96386C7.02341 5.02764 7.02341 6.76058 5.96981 7.82437Z"
+                fill="#ADB3B3"
+              />
+            </svg>
+            <span>Пол</span>
+          </div>
+          <select class="col-xxl-6 col-md-6 col-sm-8 col-12" name="" id="">
+            <option value="">Мужчина</option>
+            <option value="">Женщина</option>
+          </select>
+          <div
+            class="d-flex align-items-center gap-2 mt-4 col-xxl-6 col-md-6 col-sm-8 col-12"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="12"
+              viewBox="0 0 8 12"
+              fill="none"
+            >
+              <path
+                d="M4 0C1.78857 0 0 1.878 0 4.2C0 7.35 4 12 4 12C4 12 8 7.35 8 4.2C8 1.878 6.21143 0 4 0ZM4 5.7C3.21143 5.7 2.57143 5.028 2.57143 4.2C2.57143 3.372 3.21143 2.7 4 2.7C4.78857 2.7 5.42857 3.372 5.42857 4.2C5.42857 5.028 4.78857 5.7 4 5.7Z"
+                fill="#ADB3B3"
+              />
+            </svg>
+            <span>Страна</span>
+          </div>
+          <select
+            class="col-xxl-6 col-md-6 col-sm-8 col-12"
+            class="mb-4"
+            name=""
+            id=""
+          >
+            <option value="">Кыргызстан</option>
+            <option value="">Россия</option>
+          </select>
+          <div
+            class="d-flex align-items-center gap-2 mt-4 col-xxl-6 col-md-6 col-sm-8 col-12"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <path
+                d="M10 6.92282L7.07197 6.58391L5.67185 7.98403C4.09949 7.18396 2.81049 5.90051 2.01042 4.3226L3.4161 2.91692L3.07718 0H0.0158001C-0.30645 5.65605 4.34395 10.3064 10 9.9842V6.92282Z"
+                fill="#ADB3B3"
+              />
+            </svg>
+            <span>Номер телефона</span>
+          </div>
+          <div class="d-flex gap-3 col-xxl-6 col-md-6 col-sm-8 col-12">
+            <select class="number-select" name="" id="">
+              <option value="">+996</option>
+              <option value="">+1</option>
+              <option value="">+101</option>
+            </select>
+            <input class="w-100" type="tel" />
+          </div>
+
+          <button class="col-xxl-6 col-md-6 col-sm-8 col-12">Сохранить</button>
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

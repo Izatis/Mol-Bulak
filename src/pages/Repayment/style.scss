@@ -1,0 +1,297 @@
+@import "../../styles/variables.scss";
+@import "../../styles/adaptive.scss";
+
+.repayment-section {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 120px;
+  @include centering;
+@include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+  .home-link {
+    text-decoration: none;
+    color: #00b346;
+  }
+  .line {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 13px;
+    background: #e8eaec;
+    height: 4px;
+  }
+  .navigation-titles {
+    display: flex;
+    gap: 7px;
+    a {
+      color: #00b346;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      @include adaptive-value("font-size", 16, 15, 0);
+    }
+
+    li {
+      color: #a8a9ad;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+    }
+  }
+  .repayment-block {
+    max-width: 730px;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #00b346 0%, #00d955 100%);
+
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @include adaptive-value("font-size", 32, 19, 0);
+    }
+  }
+
+  .card-block {
+    max-width: 169px;
+    width: 100%;
+    height: 34px;
+    border-radius: 3px 15px;
+    background: #ffdf6e;
+    a {
+      border: none;
+      background: none;
+      color: #383c45;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      @include adaptive-value("font-size", 18, 15, 0);
+      white-space: nowrap;
+      font-weight: 700;
+      padding-top: 6px;
+    }
+  }
+
+  .methods {
+    max-width: 169px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      background: none;
+      border: none;
+      color: #a8a9ad;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      @include adaptive-value("font-size", 18, 15, 0);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  .number {
+    width: 35px;
+    height: 30px;
+    background: #d9d9d9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @include adaptive-value("font-size", 20, 19, 0);
+  }
+  .number-bloks {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .number-titles-block {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-block {
+    max-width: 570px;
+    width: 100%;
+  }
+  .number-active {
+    width: 35px;
+    height: 30px;
+    background: #00b346;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @include adaptive-value("font-size", 20, 19, 0);
+  }
+
+  p {
+    color: #a8a9ad;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .repayment-title {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .card-title {
+    color: #383c45;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    @include adaptive-value("font-size", 18, 16, 0);
+  }
+
+  .methods-title {
+    color: #a8a9ad;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    @include adaptive-value("font-size", 18, 16, 0);
+    white-space: nowrap;
+  }
+
+  .number-title {
+    color: #a8a9ad;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    @include adaptive-value("font-size", 14, 12, 0);
+  }
+
+  .birthday-title {
+    color: #383c45;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include adaptive-value("font-size", 12, 12, 0);
+  }
+
+  .input::placeholder {
+    color: #a8a9ad;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .input {
+    color: #a8a9ad;
+    font-size: 14px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .inputs-block {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .forget-title {
+    color: #00b346;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-decoration: none;
+  }
+
+  .check-btn {
+    max-width: 255px;
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    background: #2ab34b;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    @include adaptive-value("font-size", 18, 16, 0);
+  }
+
+  .conditions-text {
+    font-size: 9px;
+  }
+}
+body{
+  background: #FEFBF2;
+}
+
+@media screen and (max-width: 767px) {
+  .repayment-section {
+    .check-btn {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .navigation-titles {
+    display: none !important;
+  }
+  .repayment-section {
+    .repayment-block {
+      height: 50px;
+      border-radius: 5px 30px;
+    }
+  }
+}

@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+  </head>
+
+  <body>
+     <header
+      class="w-100 position-fixed top-0 z-3 d-flex align-items-center px-md-4 px-2"
+    >
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="header__logo col-md-3 col-sm-11 col-10">
+            <a href="/Main.html">
+              <img
+                class="img-fluid"
+                src="../../assets/header-footer/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="header__menu col-2 d-md-block d-none p-0">
+            <div class="header__menu-entrails d-flex align-items-center">
+              <button
+                class="w-100 position-relative d-flex align-items-center justify-content-between btn"
+              >
+                <img src="../../assets/header-footer/menu.svg" alt="menu" />
+                <h4 class="fs-5 fw-semibold">Меню</h4>
+                <nav class="position-absolute rounded-4 gap-4 pt-3">
+                  <img
+                    class="position-absolute"
+                    src="../../assets/header-footer/top-arrow.svg"
+                    alt="arrow image"
+                  />
+                  <ul>
+                    <li><a href="/Main.html">Главная</a></li>
+                    <li><a href="/News.html">Новости</a></li>
+                    <li><a href="#">Получить заём</a></li>
+                    <li><a href="/Repayment.html">Погасить заём</a></li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                      <a href="/PersonalData.html">Личный кабинет</a>
+                    </li>
+                    <li><a href="/Main.html">Моб. приложение</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li>
+                      <a href="/Contact-us.html">Связаться с нами</a>
+                    </li>
+                  </ul>
+
+                  <ul class="menu__latest-list">
+                    <li>
+                      <a href="/PersonalData.html">Личный кабинет</a>
+                    </li>
+                    <li><a href="/Main.html">Моб. приложение</a></li>
+                    <li><a href="#">Акции</a></li>
+                  </ul>
+                </nav>
+              </button>
+            </div>
+          </div>
+          <div
+            class="header__setting col-7 d-md-flex d-none justify-content-end p-0"
+          >
+            <a
+              class="header__personal-area fs-6 fw-semibold text-white me-4 btn"
+              href="/PersonalData.html"
+              >Личный кабинет</a
+            >
+            <a class="header__get-money fs-6 fw-semibold me-5 btn" href="#"
+              >Получить деньги</a
+            >
+            <button class="header__language-btn w-100 fs-6 fw-semibold p-0 btn">
+              <i class="bi bi-globe"></i> РУ
+            </button>
+          </div>
+
+          <!-- Burger menu -->
+          <nav class="col d-md-none d-block" role="navigation">
+            <div id="menu-toggle">
+              <input type="checkbox" id="test" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <div class="burgerAkchaIcon position-absolute">
+                  <a href="/Main.html">
+                    <img
+                      class="burgreImg"
+                      src="../../assets/news/BurgerIcon.svg"
+                      alt="burgerIcon"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/Recently.png"
+                              alt="mainImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Главная</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Main.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Главная страница</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="newsImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Новости</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/News.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Новости дня</li></a
+                        >
+                      </div>
+                      <div class="accordion-body">
+                        <a href="/News.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Новости недели</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="getMonImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Получить заём</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                                      <a href="/Payments.html" class="d-flex burgerUpSpace">
+
+
+                          <li class="p-2">Заём для вас</li></a
+                        >
+                      </div>
+                      <div class="accordion-body">
+                                      <a href="/Payments.html" class="d-flex burgerUpSpace">
+
+
+                          <li class="p-2">Изменить платёж</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="givMonImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Погасить заём</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Repayment.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Погашение заёмов</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/Recently.png"
+                              alt="perCobImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Личный кабинет</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="collapse"
+                      aria-labelledby="flush-headingFive"
+                    >
+                      <div class="accordion-body">
+                        <a
+                          href="/PersonalData.html"
+                          class="d-flex burgerUpSpace"
+                        >
+                          <li class="p-2">Ваш кабинет</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="mobileImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Мобильное приложение</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSix"
+                      class="collapse"
+                      aria-labelledby="flush-headingSix"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Main.html" class="d-flex burgerUpSpace">
+
+                          <li class="p-2">Моб-приложение</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="pt-3">
+                  <button
+                    class="header__language-btn border-0 fs-6 fw-semibold pe-0 ps-0 btn d-flex pt-3"
+                  >
+                    <img src="../../assets/news/Vector.svg" alt="VectorImg" />
+                    <p>РУ</p>
+                    <div class="burgerSocialIcons justify-content-between">
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/Twitter.svg"
+                        alt="twitterImg"
+                      />
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/Whatsapp.svg"
+                        alt="whatsappImg"
+                      />
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/instagram.svg"
+                        alt="InstagramImg"
+                      />
+                    </div>
+                  </button>
+                </div>
+                <div class="burgerNumbers mt-4">
+                  <div class="d-flex">
+                    +996 555 123 456
+                    <p class="clientBur">Клиентам</p>
+                  </div>
+                  <div class="d-flex pt-3">
+                    +996 555 123 456
+                    <p class="clientBur">Бизнесу и ИП</p>
+                  </div>
+                  <div class="burgerMail pt-3">
+                    <a href="#">support@akchalay.kg</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="give position-relative">
+        <div class="container">
+          <div class="give__left-box-progress-box">
+            <h2 class="give__left-box-progress-box-title">
+              Чтобы получить деньги выберите срок и сумму
+            </h2>
+
+            <div class="give__left-box-progress-box-content">
+              <h2 class="give__left-box-progress-box-content-subtitle">
+                Прогресс заполнения
+              </h2>
+
+              <ul
+                class="give__left-box-progress-stage-adaptation d-flex justify-content-between position-relative"
+              >
+                <li
+                  class="give__left-box-progress-stage d-flex flex-column justify-content-center"
+                >
+                  <p
+                    id="stepNumberA1"
+                    class="give__left-box-progress-stage-circle-point d-flex justify-content-center align-items-center stepNumber"
+                    style="position: relative; z-index: 5"
+                  >
+                    1
+                  </p>
+
+                  <p
+                    id="stepTextA1"
+                    class="give__left-box-progress-stage-circle-text active stepText"
+                  >
+                    Выберите<br />
+                    сумму
+                  </p>
+                </li>
+
+                <li
+                  class="give__left-box-progress-stage d-flex flex-column justify-content-center align-items-center"
+                >
+                  <p
+                    id="stepNumberA2"
+                    class="give__left-box-progress-stage-circle-point d-flex justify-content-center align-items-center"
+                  >
+                    2
+                  </p>
+                  <p
+                    id="stepTextA2"
+                    class="give__left-box-progress-stage-circle-text text-center"
+                  >
+                    Укажите свои <br />
+                    данные
+                  </p>
+                </li>
+
+                <li
+                  class="give__left-box-progress-stage d-flex flex-column align-items-end"
+                >
+                  <p
+                    id="stepNumberA3"
+                    class="give__left-box-progress-stage-circle-point position-relative d-flex justify-content-center align-items-center"
+                  >
+                    3
+                  </p>
+                  <p
+                    id="stepTextA3"
+                    class="give__left-box-progress-stage-circle-text"
+                    style="text-align: right"
+                  >
+                    Получите <br />
+                    деньги
+                  </p>
+                </li>
+
+                <div class="give__left-box-progress-stage-line give__left-box-progress-stage-line-green-adap">
+                  <div id="firstLineAdap" class="give__left-box-progress-stage-line-green"></div>
+                  <div id="secondLineAdap" class="give__left-box-progress-stage-line-green"></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <div class="give__content d-flex overflow-hidden">
+            <div class="give__left">
+              <h1 id="titleStep" class="give__left-title">
+                Чтобы получить деньги <br />
+                выберите срок и сумму
+              </h1>
+
+              <div class="give__left-box d-flex">
+                <form id="form1" class="give__left-box-form flex-column">
+                  <div class="give__left-box-form-inputs">
+                    <label class="give__left-box-form-inputs-label w-100">
+                      <span class="give__left-box-form-inputs-label-subtitle"
+                        >Желаемая сумма займа</span
+                      >
+
+                      <div class="give__left-box-form-inputs-label-total">
+                        <p
+                          id="valueForMainMoney"
+                          class="give__left-box-form-inputs-label-title d-flex align-items-center"
+                        >
+                          5 000 с.
+                        </p>
+                        <span>
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_1_3653)">
+                              <path
+                                d="M15.545 12.8943C15.0077 12.8943 14.5735 13.3286 14.5735 13.8658V16.9175C14.5735 17.4538 14.1382 17.8891 13.6019 17.8891H2.91468C2.37836 17.8891 1.94313 17.4538 1.94313 16.9175V4.2872C1.94313 3.75088 2.3784 3.31565 2.91468 3.31565H8.55946C9.09672 3.31565 9.531 2.88136 9.531 2.3441C9.531 1.80685 9.09672 1.37256 8.55946 1.37256H2.91468C1.30771 1.37248 0 2.68023 0 4.2872V16.9175C0 18.5245 1.30771 19.8322 2.91468 19.8322H13.6019C15.2088 19.8322 16.5165 18.5255 16.5165 16.9175V13.8659C16.5166 13.3286 16.0823 12.8943 15.545 12.8943Z"
+                                fill="#2AB34B"
+                              />
+                              <path
+                                d="M18.913 1.24913C18.2076 0.543792 17.2866 0.188173 16.3587 0.16876C15.3823 0.147393 14.4 0.501019 13.6617 1.24038L7.08415 7.81788C6.12425 8.78169 5.5957 10.0603 5.5957 11.4185V13.5948C5.5957 14.132 6.02999 14.5663 6.56725 14.5663H8.74354C10.1018 14.5663 11.3804 14.0378 12.3451 13.0769L18.9139 6.50814C20.3615 5.05961 20.3615 2.69872 18.913 1.24913ZM10.9724 11.7022C10.3768 12.2959 9.58399 12.6233 8.74362 12.6233H7.53883V11.4185C7.53883 10.5781 7.86625 9.78531 8.45889 9.19071L12.795 4.85461L15.3074 7.36707L10.9724 11.7022ZM17.5392 5.13539L16.6813 5.99331L14.1688 3.48085L15.0267 2.62297C15.7204 1.92928 16.8474 1.93123 17.5391 2.62297C18.2309 3.31566 18.2309 4.44267 17.5392 5.13539Z"
+                                fill="#2AB34B"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1_3653">
+                                <rect width="20" height="20" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="give__left-box-form-inputs-label-range">
+                        <input
+                          id="moneyInput"
+                          class="give__left-box-form-inputs-label-range-input"
+                          type="range"
+                          min="0"
+                          max="30000"
+                          value="5000"
+                        />
+                        <ul class="give__left-box-form-inputs-label-range-ul">
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                        </ul>
+                      </div>
+
+                      <div
+                        class="give__left-box-form-inputs-label-num d-flex justify-content-between"
+                      >
+                        <span class="give__left-box-form-inputs-label-num-text"
+                          >5 000 с.</span
+                        >
+                        <span
+                          class="give__left-box-form-inputs-label-num-text left"
+                          >15 000 с.</span
+                        >
+                        <span class="give__left-box-form-inputs-label-num-text"
+                          >30 000 с.</span
+                        >
+                      </div>
+                    </label>
+
+                    <label class="give__left-box-form-inputs-label w-100">
+                      <span class="give__left-box-form-inputs-label-subtitle"
+                        >Срок займа</span
+                      >
+
+                      <div class="give__left-box-form-inputs-label-total">
+                        <p
+                          id="valueForMainMonth"
+                          class="give__left-box-form-inputs-label-title d-flex align-items-center"
+                        >
+                          3 мес.
+                        </p>
+                        <span>
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_1_3653)">
+                              <path
+                                d="M15.545 12.8943C15.0077 12.8943 14.5735 13.3286 14.5735 13.8658V16.9175C14.5735 17.4538 14.1382 17.8891 13.6019 17.8891H2.91468C2.37836 17.8891 1.94313 17.4538 1.94313 16.9175V4.2872C1.94313 3.75088 2.3784 3.31565 2.91468 3.31565H8.55946C9.09672 3.31565 9.531 2.88136 9.531 2.3441C9.531 1.80685 9.09672 1.37256 8.55946 1.37256H2.91468C1.30771 1.37248 0 2.68023 0 4.2872V16.9175C0 18.5245 1.30771 19.8322 2.91468 19.8322H13.6019C15.2088 19.8322 16.5165 18.5255 16.5165 16.9175V13.8659C16.5166 13.3286 16.0823 12.8943 15.545 12.8943Z"
+                                fill="#2AB34B"
+                              />
+                              <path
+                                d="M18.913 1.24913C18.2076 0.543792 17.2866 0.188173 16.3587 0.16876C15.3823 0.147393 14.4 0.501019 13.6617 1.24038L7.08415 7.81788C6.12425 8.78169 5.5957 10.0603 5.5957 11.4185V13.5948C5.5957 14.132 6.02999 14.5663 6.56725 14.5663H8.74354C10.1018 14.5663 11.3804 14.0378 12.3451 13.0769L18.9139 6.50814C20.3615 5.05961 20.3615 2.69872 18.913 1.24913ZM10.9724 11.7022C10.3768 12.2959 9.58399 12.6233 8.74362 12.6233H7.53883V11.4185C7.53883 10.5781 7.86625 9.78531 8.45889 9.19071L12.795 4.85461L15.3074 7.36707L10.9724 11.7022ZM17.5392 5.13539L16.6813 5.99331L14.1688 3.48085L15.0267 2.62297C15.7204 1.92928 16.8474 1.93123 17.5391 2.62297C18.2309 3.31566 18.2309 4.44267 17.5392 5.13539Z"
+                                fill="#2AB34B"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1_3653">
+                                <rect width="20" height="20" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="give__left-box-form-inputs-label-range">
+                        <input
+                          id="monthInput"
+                          class="give__left-box-form-inputs-label-range-input"
+                          type="range"
+                          min="3"
+                          max="12"
+                          value="3"
+                        />
+                        <ul
+                          class="give__left-box-form-inputs-label-range-ul"
+                          style="transform: translateY(1px)"
+                        >
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                          <li
+                            class="give__left-box-form-inputs-label-range-ul-li"
+                          ></li>
+                        </ul>
+                      </div>
+
+                      <div
+                        class="give__left-box-form-inputs-label-num d-flex justify-content-between"
+                      >
+                        <span class="give__left-box-form-inputs-label-num-text"
+                          >3 мес.</span
+                        >
+                        <span class="give__left-box-form-inputs-label-num-text"
+                          >6 мес.</span
+                        >
+                        <span
+                          class="give__left-box-form-inputs-label-num-text left"
+                          >9 мес.</span
+                        >
+                        <span class="give__left-box-form-inputs-label-num-text"
+                          >12 мес.</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+
+                  <select
+                    class="give__left-box-form-select form-select w-100"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Выберите цель займа</option>
+                    <option value="1">Машина</option>
+                    <option value="2">Ноутбук</option>
+                    <option value="3">Одежда</option>
+                  </select>
+
+                  <div class="give__left-box-form-checked d-flex flex-column">
+                    <div class="give__left-box-form-checked-label">
+                      <input
+                        class="give__left-box-form-checked-label-input"
+                        type="checkbox"
+                        id="flexSwitchCheckChecked1"
+                      />
+                      <label
+                        class="give__left-box-form-checked-label-text"
+                        for="flexSwitchCheckChecked1"
+                        >Я согласен(на) с обработкой
+                        <span style="color: #2ab34b"
+                          >персональных данных</span
+                        ></label
+                      >
+                    </div>
+
+                    <div class="give__left-box-form-checked-label">
+                      <input
+                        class="give__left-box-form-checked-label-input"
+                        type="checkbox"
+                        id="flexSwitchCheckChecked2"
+                      />
+                      <label
+                        class="give__left-box-form-checked-label-text"
+                        for="flexSwitchCheckChecked2"
+                        >Мне более 18 лет</label
+                      >
+                    </div>
+                  </div>
+                </form>
+                <form id="form2" class="give__left-box-form2">
+                  <div class="give__left-box-form2-box">
+                    <label for="telephone">Телефон</label>
+                    <input
+                      type="tel"
+                      id="telephone"
+                      placeholder="+996 xxx xxx xxx"
+                    />
+                  </div>
+
+                  <div class="give__left-box-form2-box">
+                    <label for="inn">ИНН</label>
+                    <input type="text" id="inn" placeholder="ххххххххххххххх" />
+                  </div>
+
+                  <div class="give__left-box-form2-box">
+                    <label for="fullName">ФИО</label>
+                    <input
+                      type="text"
+                      id="fullName"
+                      placeholder="Фамилия, имя и отчество"
+                    />
+                  </div>
+
+                  <div class="give__left-box-form2-kodBox">
+                    <div class="give__left-box-form2-kodBox-left">
+                      <label for="kod">Код подтверждения из СМС</label>
+                      <input type="text" id="kod" placeholder="Код из СМС" />
+                    </div>
+
+                    <div class="give__left-box-form2-kodBox-right">
+                      <button>Получить код</button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="g-recaptcha give__left-box-form2-bot"
+                    data-sitekey="6LeKaREUAAAAALB6Sgjp5XqHq0Kb_aLEn_KORz6u"
+                  ></div>
+                </form>
+                <form id="form3" class="give__left-box-form2">
+                  <div class="give__left-box-form2-box">
+                    <label for="login">Ваш логин</label>
+                    <input
+                      type="tel"
+                      id="login"
+                      placeholder="+996 xxx xxx xxx"
+                    />
+                  </div>
+
+                  <div class="give__left-box-form2-box">
+                    <label for="password">Придумайте пароль</label>
+                    <input type="text" id="password" placeholder="●●●●●●●●" />
+                  </div>
+
+                  <div class="give__left-box-form2-box">
+                    <label for="confirm">Введите пароль повторно</label>
+                    <input type="text" id="confirm" placeholder="●●●●●●●●" />
+                  </div>
+
+                  <div class="give__left-box-form2-text">
+                    <p>
+                      Длина пароля не может быть меньше 8 и более 15 символов
+                    </p>
+                    <p>
+                      Пароль должен содержать как буквы, так и цифры. Будьте
+                      внимательны при вводе
+                    </p>
+                  </div>
+
+                  <div
+                    class="g-recaptcha give__left-box-form2-bot"
+                    data-sitekey="6LeKaREUAAAAALB6Sgjp5XqHq0Kb_aLEn_KORz6u"
+                  ></div>
+                </form>
+
+                <div class="give__left-box-progress">
+                  <h2 class="give__left-box-progress-title">
+                    Прогресс заполнения анкеты
+                  </h2>
+
+                  <ul
+                    class="give__left-box-progress-stage d-flex justify-content-between position-relative"
+                  >
+                    <li
+                      class="give__left-box-progress-stage-circle d-flex flex-column justify-content-center"
+                    >
+                      <p
+                        id="stepNumber1"
+                        class="give__left-box-progress-stage-circle-point stepNumber active position-relative d-flex justify-content-center align-items-center"
+                      >
+                        1
+                      </p>
+                      <p
+                        id="stepText1"
+                        class="give__left-box-progress-stage-circle-text stepText active"
+                      >
+                        Выберите<br />
+                        сумму
+                      </p>
+                    </li>
+
+                    <li
+                      class="give__left-box-progress-stage-circle d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <p
+                        id="stepNumber2"
+                        class="give__left-box-progress-stage-circle-point position-relative d-flex justify-content-center align-items-center"
+                      >
+                        2
+                      </p>
+                      <p
+                        id="stepText2"
+                        class="give__left-box-progress-stage-circle-text text-center"
+                      >
+                        Укажите свои <br />
+                        данные
+                      </p>
+                    </li>
+
+                    <li
+                      class="give__left-box-progress-stage-circle d-flex flex-column align-items-end"
+                    >
+                      <p
+                        id="stepNumber3"
+                        class="give__left-box-progress-stage-circle-point position-relative d-flex justify-content-center align-items-center"
+                      >
+                        3
+                      </p>
+                      <p
+                        id="stepText3"
+                        class="give__left-box-progress-stage-circle-text"
+                        style="text-align: right"
+                      >
+                        Получите <br />
+                        деньги
+                      </p>
+                    </li>
+                    <div class="give__left-box-progress-stage-line">
+                      <div id="firstLine" class="give__left-box-progress-stage-line-green"></div>
+                      <div id="secondLine" class="give__left-box-progress-stage-line-green"></div>
+                    </div>
+                  </ul>
+
+                  <ul class="give__left-box-progress-info">
+                    <li class="give__left-box-progress-info-item">
+                      <span class="give__left-box-progress-info-item-span"
+                        >Вы выбрали заём на сумму:</span
+                      >
+
+                      <p
+                        id="valueForMoney"
+                        class="give__left-box-progress-info-item-p"
+                      >
+                        5 000 с.
+                      </p>
+                    </li>
+
+                    <li class="give__left-box-progress-info-item">
+                      <span class="give__left-box-progress-info-item-span"
+                        >На срок:</span
+                      >
+
+                      <p
+                        id="valueForMonth"
+                        class="give__left-box-progress-info-item-p"
+                      >
+                        1 мес.
+                      </p>
+                    </li>
+
+                    <li class="give__left-box-progress-info-item">
+                      <span class="give__left-box-progress-info-item-span"
+                        >Ставка:</span
+                      >
+
+                      <p class="give__left-box-progress-info-item-p">18%</p>
+                    </li>
+
+                    <li class="give__left-box-progress-info-item">
+                      <span class="give__left-box-progress-info-item-span"
+                        >Ежемесячный платеж:</span
+                      >
+
+                      <p
+                        class="give__left-box-progress-info-item-p"
+                        id="totalValue"
+                        style="color: #2ab34b"
+                      >
+                        1 966 с.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="give__left-bottom d-flex">
+                <div>
+                  <button
+                    class="give__left-bottom-btn"
+                    id="nextBtn"
+                    type="button"
+                  >
+                    Далее
+                  </button>
+                </div>
+
+                <p class="give__left-bottom-text">
+                  Предварительный рассчет носит ознакомительные характер.
+                  Финальный рассчет может незначительно отличаться в большую или
+                  меньшую сторону. Эффективная процентная ставка ХХ%. Годовая
+                  процентная ставка ХХ%, минимальный срок займа 61 день1
+                </p>
+              </div>
+            </div>
+
+            <div class="give__right position-relative">
+              <h2 class="give__right-title">
+                Скачайте наше <br />
+                мобильное приложение
+              </h2>
+
+              <div
+                class="give__right-img d-flex align-items-center justify-content-center overflow-hidden"
+              >
+                <img src="../../assets/phone.png" alt="phone" />
+              </div>
+              <div class="give__right-box d-flex">
+                <button type="button" class="give__right-box-btn">
+                  Скачать для iOS
+                </button>
+                <button type="button" class="give__right-box-btn">
+                  Скачать для Android
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="d-flex tabs">
+          <div class="tabs__tab">
+            <p class="tabs__tab-text">Рекомендуемое</p>
+            <p class="tabs__tab-subtext">Скачайте наше мобильное приложение</p>
+          </div>
+
+          <div class="tabs__tab">
+            <p class="tabs__tab-text">Личный кабинет</p>
+            <p class="tabs__tab-subtext">Используйте все сервисы Акчалай</p>
+          </div>
+
+          <div class="tabs__tab">
+            <p class="tabs__tab-text">Как погасить заем</p>
+            <p class="tabs__tab-subtext">Акчалай это удобно для клиентов!</p>
+          </div>
+
+          <div class="tabs__tab">
+            <p class="tabs__tab-text">Бери и покупай</p>
+            <p class="tabs__tab-subtext">Мы не ограничиваем наших клиентов!</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="download">
+        <div class="container">
+          <div class="download__content">
+            <div class="download__left">
+              <h2 class="download__title">
+                Скачайте наше мобильное приложение
+              </h2>
+
+              <div>
+                <button>Скачать</button>
+              </div>
+            </div>
+
+            <div class="download__right">
+              <img src="../../assets/bottom_phone.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rec py-5">
+        <div class="container">
+          <div class="rec_content">
+            <h2 class="fw-bold mb-4 mb-sm-5 mt-4 mt-lg-0">Рекомендуемое</h2>
+            <div
+              class="carousel"
+              data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'
+            >
+              <a href="#">
+                <div
+                  class="carousel-cell py-4 ps-4 d-flex flex-column justify-content-between"
+                >
+                  <img src="../../assets/hand_card.png" alt="image" />
+                  <div>
+                    <h4 class="fw-bold">Заём на карту</h4>
+                    <p class="fw-medium fs-6">
+                      Оформление онлайн <br />
+                      всего за 1 час
+                    </p>
+                  </div>
+                  <button class="fw-semibold">
+                    <a href="#">Подробнее</a>
+                  </button>
+                </div>
+              </a>
+              <a href="/PersonalData.html">
+                <div
+                  class="carousel-cell py-4 ps-4 d-flex flex-column justify-content-between"
+                >
+                  <img src="../../assets/hand_phone.png" alt="image" />
+                  <div>
+                    <h4 class="fw-bold">Личный кабинет</h4>
+                    <p class="fw-medium fs-6">
+                      Настройте ваш личный <br />
+                      кабинет
+                    </p>
+                  </div>
+                  <button class="fw-semibold">
+                    <a href="/PersonalData.html">Подробнее</a>
+                  </button>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="carousel-cell py-4 ps-4 d-flex flex-column justify-content-between"
+                >
+                  <img src="../../assets/hand_coins%201.png" alt="image" />
+                  <div>
+                    <h4 class="fw-bold">Приведи друга</h4>
+                    <p class="fw-medium fs-6">
+                      И вы оба получите <br />
+                      приятные бонусы!
+                    </p>
+                  </div>
+                  <button class="fw-semibold">
+                    <a href="#">Подробнее</a>
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div
+              class="d-flex mt-4 justify-content-center align-items-center more_btn"
+            >
+              <button class="fw-medium fs-6">
+                <a href="#">Все продукты</a>
+              </button>
+              <img src="../../assets/right-arrow.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="interest py-4 py-sm-5">
+        <div class="container">
+          <h2 class="fw-bold mb-4 mb-sm-5">Интересное</h2>
+          <div class="row row-gap-4">
+            <div class="col-12 col-sm-7">
+              <div class="interest_card p-4 big_card">
+                <div class="interest_card__img1">
+                  <img src="../../assets/boy.png" alt="boy" />
+                </div>
+                <p class="fw-bold lh-sm fs-3 fs-sm-2 mb-1">
+                  Получите заём <br />
+                  всего за 1 час!
+                </p>
+                <p class="fs-5 lh-sm">Скачайте наше мобильное приложение</p>
+                <button class="light_btn px-3 py-1 fw-semibold">
+                  <a href="#">Перейти</a>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-sm-5">
+              <div class="interest_card p-4 little_card">
+                <div class="interest_card__img2">
+                  <img src="../../assets/iphone.png" alt="phone" />
+                </div>
+                <p class="fw-bold lh-sm fs-3 fs-sm-2 mb-1">
+                  Всегда под <br />
+                  рукой!
+                </p>
+                <p class="fs-5 lh-sm">Скачайте моб. приложение</p>
+                <button class="green_btn px-3 py-1 fw-semibold">
+                  <a href="#">Перейти</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news py-5">
+        <div class="container news_content">
+          <h2 class="fw-bold mb-4 mb-sm-5">Последние новости</h2>
+          <div
+            class="carousel"
+            data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'
+          >
+            <a href="/News-more.html">
+              <div class="carousel-cell news_content__card">
+                <img src="../../assets/news1.png" class="mb-2" alt="image" />
+                <p class="fw-bold fs-5">Какое-то событие</p>
+                <p class="text-secondary fw-medium">
+                  Классический текст Lorem Ipsum
+                </p>
+              </div>
+            </a>
+            <a href="/News-more.html">
+              <div class="carousel-cell news_content__card">
+                <img src="../../assets/news2.png" class="mb-2" alt="image" />
+                <p class="fw-bold fs-5">Какое-то событие на две строки</p>
+                <p class="text-secondary fw-medium">
+                  Классический текст Lorem Ipsum
+                </p>
+              </div>
+            </a>
+            <a href="/News-more.html">
+              <div class="carousel-cell news_content__card">
+                <img src="../../assets/news3.png" class="mb-2" alt="image" />
+                <p class="fw-bold fs-5">Какое-то событие</p>
+                <p class="text-secondary fw-medium">
+                  Классический текст Lorem Ipsum
+                </p>
+              </div>
+            </a>
+            <a href="/News-more.html">
+              <div class="carousel-cell news_content__card">
+                <img src="../../assets/news4.png" class="mb-2" alt="image" />
+                <p class="fw-bold fs-5">Какое-то событие на две строки</p>
+                <p class="text-secondary fw-medium">
+                  Классический текст Lorem Ipsum
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="d-flex mt-4 justify-content-center align-items-center more_btn"
+          >
+            <button class="fw-medium fs-6"><a href="/News.html">Показать ещё</a></button>
+            <img src="../../assets/right-arrow.svg" alt="arrow" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div
+          class="row d-md-flex d-block py-md-5 py-4 ps-md-0 ps-2 mb-md-3 mb-0"
+        >
+          <a class="footer__logo col-md-3" href="/Main.html">
+            <img
+              class="img-fluid d-md-inline d-none"
+              src="../../assets/header-footer/footer-logo-first.svg"
+              alt="logo"
+            />
+            <img
+              class="img-fluid d-md-none d-inline mb-5"
+              src="../../assets/header-footer/footer-logo-second.svg"
+              alt="logo"
+            />
+          </a>
+          <ul class="footer__list col-md-3 d-md-block d-none">
+            <li class="footer__title mb-3">Навигация</li>
+            <li class="footer__link">
+              <a href="/AboutUs.html">О нас</a>
+            </li>
+            <li class="footer__link">
+              <a href="/News.html">Новости компании</a>
+            </li>
+            <li class="footer__link">
+              <a href="/Contact-us.html">Связаться с нами</a>
+            </li>
+          </ul>
+          <ul class="footer__list col-md-3 p-0 mb-md-0 mb-4">
+            <li class="footer__title mb-3">Навигация</li>
+            <li class="footer__link">
+              <a href="/AboutUs.html">О нас</a>
+            </li>
+            <li class="footer__link">
+              <a href="/News.html">Новости компании</a>
+            </li>
+            <li class="footer__link">
+              <a href="/Contact-us.html">Связаться с нами</a>
+            </li>
+          </ul>
+          <ul class="footer__list d-md-none d-block p-0 mb-md-0 mb-5">
+            <li class="footer__title mb-3">Контакты</li>
+            <li class="footer__link">+996 555 123 456 Клиентам</li>
+            <li class="footer__link">+996 555 123 456 Бизнесу и ИП</li>
+            <li class="footer__link email">support@akchalay.kg</li>
+          </ul>
+          <div
+            class="footer__social col-md-3 d-flex d-block gap-4 justify-content-md-end justify-content-start mb-md-0 mb-4"
+          >
+            <a href="#"
+              ><img
+                class="img-fluid"
+                src="../../assets/header-footer/telegram.svg"
+                alt="telegram"
+            /></a>
+            <a href="#"
+              ><img
+                class="img-fluid"
+                src="../../assets/header-footer/whatsapp.svg"
+                alt="whatsapp"
+            /></a>
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="../../assets/header-footer/instagram.svg"
+                alt="instagram"
+              />
+            </a>
+          </div>
+        </div>
+        <p class="d-md-block d-none footer__sub-title text-center pb-2">
+          ООО МКК АКЧАЛАЙ
+        </p>
+      </div>
+    </footer>
+    <script>
+      const body = document.querySelector("body");
+      const menuToggle = document.getElementById("test");
+      menuToggle.addEventListener("change", function () {
+        if (this.checked) {
+          body.style.overflow = "hidden";
+        } else {
+          body.style.overflow = "";
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="Slider.js"></script>
+    <script src="Step.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

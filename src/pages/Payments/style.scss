@@ -1,0 +1,137 @@
+@import "../../styles/variables.scss";
+@import "../../styles/adaptive.scss";
+
+.payments {
+  background: #fefbf2;
+  @include adaptive-value("padding-top", 114, 70, 0);
+  box-sizing: border-box;
+  width: 100%;
+  @include centering;
+  .navigation-titles {
+    display: flex;
+    gap: 7px;
+    a {
+      color: #00b346;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      @include adaptive-value("font-size", 16, 15, 0);
+    }
+
+    li {
+      color: #a8a9ad;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+    }
+  }
+  .repayment-block {
+    max-width: 730px;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #00b346 0%, #00d955 100%);
+
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @include adaptive-value("font-size", 32, 19, 0);
+    }
+  }
+
+  .card-block {
+    max-width: 169px;
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px 15px;
+    background: #ffdf6e;
+    a {
+      border: none;
+      background: none;
+      color: #383c45;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      @include adaptive-value("font-size", 18, 15, 0);
+      white-space: nowrap;
+      font-weight: 700;
+    }
+  }
+
+  .methods {
+    max-width: 169px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      background: none;
+      border: none;
+      color: #a8a9ad;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      @include adaptive-value("font-size", 18, 15, 0);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  .payments_cards {
+    padding: 0 0 50px 0;
+    .payments_card_btn {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      border: 1px solid #e8eaec;
+      background: #fefefe;
+      padding: 14px 1%;
+      transition: 0.2s;
+    }
+    .payments_card_btn:hover {
+      border: 1px solid #00b346;
+    }
+  }
+  .payments_instruction_desc {
+    @include adaptive-value(font-size, 16, 14, 1);
+    font-style: normal;
+    line-height: 150%;
+    color: #383c45;
+    span {
+      font-weight: 700;
+      color: #00b346;
+    }
+  }
+}
+
+body {
+  background: #fefbf2;
+}
+
+@media screen and (max-width: 540px) {
+  .navigation-titles {
+    display: none !important;
+  }
+  .payments {
+    .repayment-block {
+      height: 50px;
+      border-radius: 5px 30px;
+    }
+  }
+}

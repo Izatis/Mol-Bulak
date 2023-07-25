@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal data</title>
+  </head>
+
+  <body>
+    <header
+      class="w-100 position-fixed top-0 z-3 d-flex align-items-center px-md-4 px-2"
+    >
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="header__logo col-md-3 col-sm-11 col-10">
+            <a href="/Main.html">
+              <img
+                class="img-fluid"
+                src="../../assets/header-footer/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="header__menu col-2 d-md-block d-none p-0">
+            <div class="header__menu-entrails d-flex align-items-center">
+              <button
+                class="w-100 position-relative d-flex align-items-center justify-content-between btn"
+              >
+                <img src="../../assets/header-footer/menu.svg" alt="menu" />
+                <h4 class="fs-5 fw-semibold">Меню</h4>
+                <nav class="position-absolute rounded-4 gap-4 pt-3">
+                  <img
+                    class="position-absolute"
+                    src="../../assets/header-footer/top-arrow.svg"
+                    alt="arrow image"
+                  />
+                  <ul>
+                    <li><a href="/Main.html">Главная</a></li>
+                    <li><a href="/News.html">Новости</a></li>
+                    <li><a href="#">Получить заём</a></li>
+                    <li><a href="/Repayment.html">Погасить заём</a></li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                      <a href="/PersonalData.html">Личный кабинет</a>
+                    </li>
+                    <li><a href="/Main.html">Моб. приложение</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li>
+                      <a href="/Contact-us.html">Связаться с нами</a>
+                    </li>
+                  </ul>
+
+                  <ul class="menu__latest-list">
+                    <li>
+                      <a href="/PersonalData.html">Личный кабинет</a>
+                    </li>
+                    <li><a href="/Main.html">Моб. приложение</a></li>
+                    <li><a href="#">Акции</a></li>
+                  </ul>
+                </nav>
+              </button>
+            </div>
+          </div>
+          <div
+            class="header__setting col-7 d-md-flex d-none justify-content-end p-0"
+          >
+            <a
+              class="header__personal-area fs-6 fw-semibold text-white me-4 btn"
+              href="/PersonalData.html"
+              >Личный кабинет</a
+            >
+            <a class="header__get-money fs-6 fw-semibold me-5 btn" href="#"
+              >Получить деньги</a
+            >
+            <button class="header__language-btn w-100 fs-6 fw-semibold p-0 btn">
+              <i class="bi bi-globe"></i> РУ
+            </button>
+          </div>
+
+          <!-- Burger menu -->
+          <nav class="col d-md-none d-block" role="navigation">
+            <div id="menu-toggle">
+              <input type="checkbox" id="test" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <div class="burgerAkchaIcon position-absolute">
+                  <a href="/Main.html">
+                    <img
+                      class="burgreImg"
+                      src="../../assets/news/BurgerIcon.svg"
+                      alt="burgerIcon"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/Recently.png"
+                              alt="mainImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Главная</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Main.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Главная страница</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="newsImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Новости</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/News.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Новости дня</li></a
+                        >
+                      </div>
+                      <div class="accordion-body">
+                        <a href="/News.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Новости недели</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="getMonImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Получить заём</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Payments.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Заём для вас</li></a
+                        >
+                      </div>
+                      <div class="accordion-body">
+                        <a href="/Payments.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Изменить платёж</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="givMonImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Погасить заём</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Repayment.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Погашение заёмов</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/Recently.png"
+                              alt="perCobImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Личный кабинет</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="collapse"
+                      aria-labelledby="flush-headingFive"
+                    >
+                      <div class="accordion-body">
+                        <a
+                          href="/PersonalData.html"
+                          class="d-flex burgerUpSpace"
+                        >
+                          <li class="p-2">Ваш кабинет</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        <div class="burgerUpSpace">
+                          <div class="burgerColums">
+                            <img
+                              class="burgerNewsImg"
+                              src="../../assets/news/CheckBox.png"
+                              alt="mobileImg"
+                            />
+                          </div>
+                        </div>
+                        <li class="p-2">Мобильное приложение</li>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSix"
+                      class="collapse"
+                      aria-labelledby="flush-headingSix"
+                    >
+                      <div class="accordion-body">
+                        <a href="/Main.html" class="d-flex burgerUpSpace">
+                          <li class="p-2">Моб-приложение</li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="pt-3">
+                  <button
+                    class="header__language-btn border-0 fs-6 fw-semibold pe-0 ps-0 btn d-flex pt-3"
+                  >
+                    <img src="../../assets/news/Vector.svg" alt="VectorImg" />
+                    <p>РУ</p>
+                    <div class="burgerSocialIcons justify-content-between">
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/Twitter.svg"
+                        alt="twitterImg"
+                      />
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/Whatsapp.svg"
+                        alt="whatsappImg"
+                      />
+                      <img
+                        class="burgerIconsSize"
+                        src="../../assets/news/instagram.svg"
+                        alt="InstagramImg"
+                      />
+                    </div>
+                  </button>
+                </div>
+                <div class="burgerNumbers mt-4">
+                  <div class="d-flex">
+                    +996 555 123 456
+                    <p class="clientBur">Клиентам</p>
+                  </div>
+                  <div class="d-flex pt-3">
+                    +996 555 123 456
+                    <p class="clientBur">Бизнесу и ИП</p>
+                  </div>
+                  <div class="burgerMail pt-3">
+                    <a href="#">support@akchalay.kg</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="container personal-section">
+      <div class="d-md-block d-none">
+        <ul class="navigation-titles mt-4 mb-5">
+          <li>
+            <a href="/Main.html" class="home-link">Главная</a>
+          </li>
+          <li>• Личный кабинет</li>
+        </ul>
+        <div class="personal-section-main-block mb-5">
+          <h2 class="text-center">Личный кабинет</h2>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-md-row flex-sm-column-reverse flex-column-reverse justify-content-between"
+      >
+        <aside class="row sidebar d-md-block">
+          <a
+            href="/PersonalData.html"
+            class="col-9 d-flex sidebar-block-active d-md-flex d-sm-none d-none"
+          >
+            <img
+              src="../../assets/profile-icons/profile-icon.svg"
+              alt="profile-icon.svg"
+            />
+            <p>Личные данные</p>
+          </a>
+          <h5 class="col-12 mt-4">Мои займы</h5>
+          <a href="/History.html" class="col-12 d-flex sidebar-block">
+            <img
+              src="../../assets/profile-icons/history-icon.svg"
+              alt="profile-icon.svg"
+            />
+            <p>Моя история</p>
+            <div class="w-100 d-flex justify-content-end">
+              <svg
+                class="d-md-none d-sm-block d-block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M6 14.59L10.58 10L6 5.41L7.41 4L13.41 10L7.41 16L6 14.59Z"
+                  fill="#383C45"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="/MyRepayments.html" class="col-12 d-flex sidebar-block">
+            <img
+              src="../../assets/profile-icons/repayments-icon.svg"
+              alt="profile-icon.svg"
+            />
+            <p>Мои погашения</p>
+            <div class="w-100 d-flex justify-content-end">
+              <svg
+                class="d-md-none d-sm-block d-block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M6 14.59L10.58 10L6 5.41L7.41 4L13.41 10L7.41 16L6 14.59Z"
+                  fill="#383C45"
+                />
+              </svg>
+            </div>
+          </a>
+          <h5 class="col-12 mt-3">Мои займы</h5>
+          <a href="/Questions.html" class="col-12 d-flex sidebar-block">
+            <img
+              src="../../assets/profile-icons/shield-question-icon.svg"
+              alt="profile-icon.svg"
+            />
+            <p>Секретный вопрос</p>
+            <div class="w-100 d-flex justify-content-end">
+              <svg
+                class="d-md-none d-sm-block d-block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M6 14.59L10.58 10L6 5.41L7.41 4L13.41 10L7.41 16L6 14.59Z"
+                  fill="#383C45"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="/ResetPassword.html" class="col-12 d-flex sidebar-block">
+            <img
+              src="../../assets/profile-icons/password-icon.svg"
+              alt="profile-icon.svg"
+            />
+            <p>Изменить пароль</p>
+            <div class="w-100 d-flex justify-content-end">
+              <svg
+                class="d-md-none d-sm-block d-block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M6 14.59L10.58 10L6 5.41L7.41 4L13.41 10L7.41 16L6 14.59Z"
+                  fill="#383C45"
+                />
+              </svg>
+            </div>
+          </a>
+          <h5 class="col-12 mt-3">Разное</h5>
+          <a href="/Documents.html" class="col-12 d-flex sidebar-block">
+            <img
+              src="../../assets/profile-icons/document-icon.svg"
+              alt="profile-icon.svg"
+            />
+            <p>Мои документы</p>
+            <div class="w-100 d-flex justify-content-end">
+              <svg
+                class="d-md-none d-sm-block d-block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M6 14.59L10.58 10L6 5.41L7.41 4L13.41 10L7.41 16L6 14.59Z"
+                  fill="#383C45"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <a href="/Contact-form.html" class="col-12 d-flex sidebar-block personal-section-hide">
+            <img
+              src="../../assets/profile-icons/shield-question-icon.svg"
+              alt="profile-icon.svg"
+            />
+            <p>Служба поддержки</p>
+            <div class="w-100 d-flex justify-content-end">
+              <svg
+                class="d-md-none d-sm-block d-block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M6 14.59L10.58 10L6 5.41L7.41 4L13.41 10L7.41 16L6 14.59Z"
+                  fill="#383C45"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <div class="accordion personal-section-accardion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <img
+                          src="../../assets/profile-icons/shield-question-icon.svg"
+                          alt="profile-icon.svg"
+                  />
+                  Служба поддержки
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <a class="accordion-body-link" href="/Contact-form.html">Написать заявку</a>
+                  <a class="accordion-body-link" href="/Operator.html">Чат с оператором</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-12 mt-2 d-flex sidebar-block">
+            <img
+              src="../../assets/profile-icons/sign-out-icon.svg"
+              alt="sign-out-icon.svg"
+            />
+            <p>Выйти</p>
+          </div>
+
+        </aside>
+        <div class="ps-4 pe-4 pb-4">
+          <div class="row">
+            <div
+              class="d-md-none mb-5 d-md-block d-flex pe-0 justify-content-center mt-4"
+            >
+              <div
+                class="personal-section-main-block personal-section-main-block-md"
+              >
+                <h2 class="text-center">Профиль</h2>
+              </div>
+            </div>
+            <div
+              class="col-xxl-12 col-md-12 col-sm-1 col-1 order-md-2 order-sm-2 order-2 d-flex align-items-center"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center profile-header"
+              >
+                <h6
+                  class="col-6 d-xxl-block d-md-block d-sm-none d-none personal-text"
+                >
+                  Личные данные
+                </h6>
+                <a
+                  href="/PersonalDataMobile.html"
+                  class="col-xxl-6 col-md-1 col-sm-1 mt-xxl-0 mt-md-0 mt-sm-3 mt-3"
+                  ><img
+                    src="../../assets/profile-icons/settings.svg"
+                    alt="setting.svg"
+                  />
+                  <span class="d-xxl-block d-md-block d-sm-none d-none"
+                    >Редактировать</span
+                  ></a
+                >
+              </div>
+            </div>
+            <div
+              class="col-xxl-12 col-md-12 col-sm-10 col-10 order-md-2 order-sm-1 order-1 d-flex mt-3 gap-3"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center profile-img"
+              >
+                <img src="../../assets/Accaount-Img.png" alt="profile_img" />
+              </div>
+              <h2 class="fullName">Алексей Иванов</h2>
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-between mt-xxl-4 mt-md-4 mt-3"
+          >
+            <h6
+              class="col-12 mt-3 col-6 d-xxl-none d-md-none d-sm-block d-block personal-text mb-3"
+            >
+              Личные данные
+            </h6>
+            <div class="col-xxl-12 col-md-12 col-sm-6 col-8 d-flex gap-3">
+              <div
+                class="d-flex align-items-center justify-content-center profile-icons"
+              >
+                <img
+                  src="../../assets/profile-icons/location_on.svg"
+                  alt="lxo"
+                />
+              </div>
+              <p>Кыргызстан</p>
+            </div>
+            <div
+              class="col-xxl-12 col-md-12 col-sm-6 col-4 d-flex gap-2 mt-xx-3 mt-md-3 mt-sm-1 mt-0"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center profile-icons"
+              >
+                <img src="../../assets/profile-icons/cake.svg" alt="lxo" />
+              </div>
+              <p>11.08.92</p>
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-between h-2 mt-xx-3 mt-md-3 mt-sm-1 mt-2"
+          >
+            <div
+              class="col-xxl-12 col-md-12 order-xxl-1 order-md-2 order-sm-2 order-2 col-sm-6 col-4 d-flex gap-3"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center profile-icons"
+              >
+                <img src="../../assets/profile-icons/male.svg" alt="lxo" />
+              </div>
+              <p>муж.</p>
+            </div>
+            <div
+              class="col-xxl-12 col-md-12 order-xxl-2 order-md-2 order-sm-1mt-xx-3 mt-md-3 mt-sm-2 mt-0 order-1 col-sm-6 col-8 d-flex gap-3"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center profile-icons"
+              >
+                <img src="../../assets/profile-icons/call.svg" alt="lxo" />
+              </div>
+              <p>+996 700 000 050</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-md-block d-none">
+      <div class="container">
+        <div
+          class="row d-md-flex d-block py-md-5 py-4 ps-md-0 ps-2 mb-md-3 mb-0"
+        >
+          <a class="col-md-3" href="/Main.html">
+            <img
+              class="img-fluid d-md-inline d-none"
+              src="../../assets/header-footer/footer-logo-first.svg"
+              alt="logo"
+            />
+            <img
+              class="img-fluid d-md-none d-inline mb-5"
+              src="../../assets/header-footer/footer-logo-second.svg"
+              alt="logo"
+            />
+          </a>
+          <ul class="footer__list col-md-3 d-md-block d-none">
+            <li class="footer__title mb-3">Навигация</li>
+            <li class="footer__link">
+              <a href="/AboutUs.html">О нас</a>
+            </li>
+            <li class="footer__link">
+              <a href="/News.html">Новости компании</a>
+            </li>
+            <li class="footer__link">
+              <a href="/Contact-us.html">Связаться с нами</a>
+            </li>
+          </ul>
+          <ul class="footer__list col-md-3 p-0 mb-md-0 mb-4">
+            <li class="footer__title mb-3">Навигация</li>
+            <li class="footer__link">
+              <a href="/AboutUs.html">О нас</a>
+            </li>
+            <li class="footer__link">
+              <a href="/News.html">Новости компании</a>
+            </li>
+            <li class="footer__link">
+              <a href="/Contact-us.html">Связаться с нами</a>
+            </li>
+          </ul>
+          <ul class="footer__list d-md-none d-block p-0 mb-md-0 mb-5">
+            <li class="footer__title mb-3">Контакты</li>
+            <li class="footer__link">+996 555 123 456 Клиентам</li>
+            <li class="footer__link">+996 555 123 456 Бизнесу и ИП</li>
+            <li class="footer__link email">support@akchalay.kg</li>
+          </ul>
+          <div
+            class="footer__social col-md-3 d-flex d-block gap-4 justify-content-md-end justify-content-start mb-md-0 mb-4"
+          >
+            <a href="#"
+              ><img
+                class="img-fluid"
+                src="../../assets/header-footer/telegram.svg"
+                alt="telegram"
+            /></a>
+            <a href="#"
+              ><img
+                class="img-fluid"
+                src="../../assets/header-footer/whatsapp.svg"
+                alt="whatsapp"
+            /></a>
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="../../assets/header-footer/instagram.svg"
+                alt="instagram"
+              />
+            </a>
+          </div>
+        </div>
+        <p class="d-md-block d-none footer__sub-title text-center pb-2">
+          ООО МКК АКЧАЛАЙ
+        </p>
+      </div>
+    </footer>
+    <script>
+      const body = document.querySelector("body");
+      const menuToggle = document.getElementById("test");
+      menuToggle.addEventListener("change", function () {
+        if (this.checked) {
+          body.style.overflow = "hidden";
+        } else {
+          body.style.overflow = "";
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
